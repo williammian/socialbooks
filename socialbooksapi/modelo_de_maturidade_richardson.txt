@@ -1,0 +1,68 @@
+
+Maioria das aplicações utiliza o modelo RPC (Remote Procedure Call)
+Exposição de métodos/funções para execução remota
+
+Modelo de Maturidade Richardson
+
+Level 3: Hypermedia Controls
+Level 2: HTTP Verbs
+Level 1: Resources
+Level 0: The Swamp of POX
+
+----------------------------------------
+
+Nível 0: POX (Plain Old XML)
+Modelo RPC
+HTTP apenas como transporte
+Semelhante ao uso de SOAP ou XML-RPC
+Ainda não é Rest
+
+POST /salvarCliente HTTP/1.1
+<cliente>
+  <nome>João da Silva</nome>
+  <nascimento>01/01/1970</nascimento>
+</cliente>
+
+----------------------------------------
+
+Nível 1: Recursos
+Mapear recursos (clientes, pedidos, ...)
+
+POST /clientes HTTP/1.1
+<cliente>
+  <nome>João da Silva</nome>
+  <nascimento>01/01/1970</nascimento>
+</cliente>
+
+-------------------------------------------
+
+Nível 2: Utilização dos métodos e respostas da forma correta
+
+POST /clientes HTTP/1.1
+<cliente>
+  <nome>João da Silva</nome>
+  <nascimento>01/01/1970</nascimento>
+</cliente>
+
+HTTP/1.1 201 Created
+Location: /cliente/1
+
+-------------------------------------------
+
+Nível 3: Hypermedia
+Entrega motor de estado
+Além do conteúdo retornado, também se retorna links para ir para um próximo estado
+Permite desacoplar o máximo possível o cliente do servidor
+
+GET /cliente/1 HTTP/1.1
+
+HTTP/1.1 200 OK
+<cliente>
+  <id>1</id>
+  <nome>João da Silva</nome>
+  <link rel="deletar" href="/cliente/1"/>
+  <link rel="notificar" href="/cliente/1/notificacao"/>
+</cliente>
+
+
+

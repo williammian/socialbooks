@@ -1,0 +1,28 @@
+REST
+Representational State Transfer
+Modelo arquiterural que nos permite criar aplicações escaláveis, simples e de maneira incremental. (assim como a Web)
+
+Web
+Características: escalável, incremental, simples, extensível, global e muito mais.
+
+Roy Fielding
+Escreveu tese de doutorado
+Architectural Styles and Design of Network-Based Software Architectures
+
+API
+Application Programming Interface
+Interface padrão entre dois módulos/sistemas distintos
+
+Constraints de APIs RestFull
+- Cliente/Servidor
+- Stateless (não mantém estado, requisições não têm relação com requisições anteriores, aumenta capacidade de escalabilidade)
+- Cache (tira gargalo do servidor)
+- Interface Uniforme (recurso, informação abstrata como cliente, produto, modelo, acesso através de URI, ex: métodos HTTP)
+- Sistema em Camadas (elementos intermediários antes que a requisição chegue de fato ao servidor, ex: caching, autenticação, loging, etc, feitos de forma transparente)
+- Código sob demanda (característica que o servidor tem de poder enviar código para o cliente e mudar o comportamento dele, ex: JavaScript)
+- Representações (conteúdos que os servidores nos retornam quando solicitamos algo, ex: HTML, XML, JSON)
+- HATEOAS
+Hypermedia as the Engine of Application State
+Motor de estado que permite que naveguemos sobre determinada aplicação Web
+Retorna conteúdo e dentro dele links para possíveis páginas futuras
+Ex: quando buscamos um cliente, podemos buscá-lo e juntamente trazer as possíveis ações que podemos fazer

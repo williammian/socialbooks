@@ -1,0 +1,141 @@
+HTTP
+Hypertext Transfer Protocol
+
+Comunicação/camadas
+1-Física
+2-Enlace
+3-Rede (IP)
+4-Transporte (TCP)
+5-Aplicação (HTTP)
+
+Modelo Request/Response
+
+Request
+GET/livros HTTP/1.1
+Host: localhost:8080
+Accept: application/json
+
+Response
+200 OK
+Content-Type: application/json
+Body:
+{
+   "nome" : "Rest aplicado",
+   "publicacao" : "01/08/2019",
+   "editora" : "Estudos WM"
+}
+
+URI - Universal Resource Identifier
+|------------URI------------|
+ http://www.wm.com.br/cursos
+      |-----URL-----||--URN-|
+
+
+Testes com 
+Wireshark (captura o tráfego de informações que passam na interface de rede)
+Postman (executa end-points http)
+
+-----------------------------------------
+
+Principais Métodos HTTP
+GET (utilizado quando existe a necessidade de se obter um recurso)
+POST (utilizado quando desejamos criar um recurso)
+PUT (semelhante ao método POST, esse método nos permite a atualização de um recurso já existente)
+DELETE (como o próprio nome sugere, o DELETE é utilizado quando existe a necessidade de remoção de um recurso)
+
+Respostas (Response codes)
+1xx (Informações gerais)
+2xx (Sucesso)
+3xx (Redirecionamento)
+4xx (Erro no cliente)
+5xx (Erro no servidor)
+
+------------------------------------------
+
+Representações
+Representação é o formato dos dados que requisitamos do servidor
+
+GET/cursos
+Content-type: text/html
+
+<html>
+  <head>
+    <title>WM</title>
+  </head>
+  <body>
+    <h1>Cursos WM</h1>
+    <a href="index.html">Cursos</a>
+  </body>
+</html>
+
+GET/cursos
+Content-type: application/xml
+
+<curso>
+  <nome>Curso REST</nome>
+  <instrutor>William</instrutor>
+  <duracao>10hs</duracao>
+</curso>
+
+GET/cursos
+Content-type: application/json
+
+{
+  "nome": "Curso REST",
+  "instrutor": "William",
+  "duracao": "10hs"
+}
+
+Desacoplado o recurso da representação
+
+---------------------------------------------
+
+Formato JSON
+JavaScript Object Notation
+Formato para intercâmbio de dados
+
+Notação
+Sistema de caracteres para representar dados, por exemplo número e palavras
+
+Portabilidade
+Transmite informações independente da tecnologia utilizada
+
+Facilidade de entendimento
+Representa os dados de maneira padronizada em relação aos conceitos universais de programação
+
+Sintaxe
+(chave/valor)
+
+Objeto
+{
+  "nome": "Curso REST",
+  "instrutor": "William",
+  "duracao": "10hs"
+}
+
+Lista
+[
+ {
+   "nome": "Curso REST",
+   "instrutor": "William",
+   "duracao": "10hs"
+ },
+ {
+   "nome": "Curso Spring",
+   "instrutor": "William",
+   "duracao": "15hs"
+ }
+]
+
+Lista Vazia
+[]
+
+Números, Strings, Objetos e Booleanos
+{
+  "nome": "Curso REST",
+  "instrutor": {"nome": "William"},
+  "duracao": 10,
+  "ativo": true
+}
+ 
+  
