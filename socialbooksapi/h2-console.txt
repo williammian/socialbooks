@@ -1,0 +1,5 @@
+http://localhost:8080/h2-console
+
+Alterar o JDBC URL para jdbc:h2:mem:testdb
+
+testdb é o nome definido pelo Spring Boot para ser o banco de dados de teste
