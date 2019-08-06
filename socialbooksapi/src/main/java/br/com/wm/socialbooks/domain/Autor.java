@@ -20,8 +20,10 @@ public class Autor {
 	
 	private String nome;
 	
+	@JsonIgnore
 	private Date nascimento;
 	
+	@JsonIgnore
 	private String nacionalidade;
 	
 	@OneToMany(mappedBy = "autor")
