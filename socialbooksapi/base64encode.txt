@@ -1,0 +1,5 @@
+https://www.base64encode.org/
+
+teste:s3nh4
+
+Authorization	Basic dGVzdGU6czNuaDQ=
