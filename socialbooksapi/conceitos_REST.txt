@@ -1,9 +1,9 @@
 REST
 Representational State Transfer
-Modelo arquiterural que nos permite criar aplicações escaláveis, simples e de maneira incremental. (assim como a Web)
+Modelo arquiterural que nos permite criar aplicaï¿½ï¿½es escalï¿½veis, simples e de maneira incremental. (assim como a Web)
 
 Web
-Características: escalável, incremental, simples, extensível, global e muito mais.
+Caracterï¿½sticas: escalï¿½vel, incremental, simples, extensï¿½vel, global e muito mais.
 
 Roy Fielding
 Escreveu tese de doutorado
@@ -11,18 +11,28 @@ Architectural Styles and Design of Network-Based Software Architectures
 
 API
 Application Programming Interface
-Interface padrão entre dois módulos/sistemas distintos
+Interface padrï¿½o entre dois mï¿½dulos/sistemas distintos
 
 Constraints de APIs RestFull
 - Cliente/Servidor
-- Stateless (não mantém estado, requisições não têm relação com requisições anteriores, aumenta capacidade de escalabilidade)
+- Stateless (nï¿½o mantï¿½m estado, requisiï¿½ï¿½es nï¿½o tï¿½m relaï¿½ï¿½o com requisiï¿½ï¿½es anteriores, aumenta capacidade de escalabilidade)
 - Cache (tira gargalo do servidor)
-- Interface Uniforme (recurso, informação abstrata como cliente, produto, modelo, acesso através de URI, ex: métodos HTTP)
-- Sistema em Camadas (elementos intermediários antes que a requisição chegue de fato ao servidor, ex: caching, autenticação, loging, etc, feitos de forma transparente)
-- Código sob demanda (característica que o servidor tem de poder enviar código para o cliente e mudar o comportamento dele, ex: JavaScript)
-- Representações (conteúdos que os servidores nos retornam quando solicitamos algo, ex: HTML, XML, JSON)
+- Interface Uniforme (recurso, informaï¿½ï¿½o abstrata como cliente, produto, modelo, acesso atravï¿½s de URI, ex: mï¿½todos HTTP)
+- Sistema em Camadas (elementos intermediï¿½rios antes que a requisiï¿½ï¿½o chegue de fato ao servidor, ex: caching, autenticaï¿½ï¿½o, loging, etc, feitos de forma transparente)
+- Cï¿½digo sob demanda (caracterï¿½stica que o servidor tem de poder enviar cï¿½digo para o cliente e mudar o comportamento dele, ex: JavaScript)
+- Representaï¿½ï¿½es (conteï¿½dos que os servidores nos retornam quando solicitamos algo, ex: HTML, XML, JSON)
 - HATEOAS
 Hypermedia as the Engine of Application State
-Motor de estado que permite que naveguemos sobre determinada aplicação Web
-Retorna conteúdo e dentro dele links para possíveis páginas futuras
-Ex: quando buscamos um cliente, podemos buscá-lo e juntamente trazer as possíveis ações que podemos fazer
+Motor de estado que permite que naveguemos sobre determinada aplicaï¿½ï¿½o Web
+Retorna conteï¿½do e dentro dele links para possï¿½veis pï¿½ginas futuras
+Ex: quando buscamos um cliente, podemos buscï¿½-lo e juntamente trazer as possï¿½veis aï¿½ï¿½es que podemos fazer
+
+BenefÃ­cios do REST/RESTFul
+ReutilizaÃ§Ã£o de cÃ³digo
+AcessÃ­vel por qualquer tecnologia
+Baixo consumo do servidor
+FÃ¡cil manutenÃ§Ã£o
+FÃ¡cil implementaÃ§Ã£o de recursos
+Front-end desamarrado do back-end
+Front e back podem ser trocados
+Outros

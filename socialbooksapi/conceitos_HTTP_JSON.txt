@@ -1,12 +1,12 @@
 HTTP
 Hypertext Transfer Protocol
 
-Comunicação/camadas
-1-Física
+Comunicaï¿½ï¿½o/camadas
+1-Fï¿½sica
 2-Enlace
 3-Rede (IP)
 4-Transporte (TCP)
-5-Aplicação (HTTP)
+5-Aplicaï¿½ï¿½o (HTTP)
 
 Modelo Request/Response
 
@@ -32,19 +32,19 @@ URI - Universal Resource Identifier
 
 
 Testes com 
-Wireshark (captura o tráfego de informações que passam na interface de rede)
+Wireshark (captura o trï¿½fego de informaï¿½ï¿½es que passam na interface de rede)
 Postman (executa end-points http)
 
 -----------------------------------------
 
-Principais Métodos HTTP
+Principais Mï¿½todos HTTP
 GET (utilizado quando existe a necessidade de se obter um recurso)
 POST (utilizado quando desejamos criar um recurso)
-PUT (semelhante ao método POST, esse método nos permite a atualização de um recurso já existente)
-DELETE (como o próprio nome sugere, o DELETE é utilizado quando existe a necessidade de remoção de um recurso)
+PUT (semelhante ao mï¿½todo POST, esse mï¿½todo nos permite a atualizaï¿½ï¿½o de um recurso jï¿½ existente)
+DELETE (como o prï¿½prio nome sugere, o DELETE ï¿½ utilizado quando existe a necessidade de remoï¿½ï¿½o de um recurso)
 
 Respostas (Response codes)
-1xx (Informações gerais)
+1xx (Informaï¿½ï¿½es gerais)
 2xx (Sucesso)
 3xx (Redirecionamento)
 4xx (Erro no cliente)
@@ -52,8 +52,8 @@ Respostas (Response codes)
 
 ------------------------------------------
 
-Representações
-Representação é o formato dos dados que requisitamos do servidor
+Representaï¿½ï¿½es
+Representaï¿½ï¿½o ï¿½ o formato dos dados que requisitamos do servidor
 
 GET/cursos
 Content-type: text/html
@@ -86,22 +86,22 @@ Content-type: application/json
   "duracao": "10hs"
 }
 
-Desacoplado o recurso da representação
+Desacoplado o recurso da representaï¿½ï¿½o
 
 ---------------------------------------------
 
 Formato JSON
 JavaScript Object Notation
-Formato para intercâmbio de dados
+Formato para intercï¿½mbio de dados
 
-Notação
-Sistema de caracteres para representar dados, por exemplo número e palavras
+Notaï¿½ï¿½o
+Sistema de caracteres para representar dados, por exemplo nï¿½mero e palavras
 
 Portabilidade
-Transmite informações independente da tecnologia utilizada
+Transmite informaï¿½ï¿½es independente da tecnologia utilizada
 
 Facilidade de entendimento
-Representa os dados de maneira padronizada em relação aos conceitos universais de programação
+Representa os dados de maneira padronizada em relaï¿½ï¿½o aos conceitos universais de programaï¿½ï¿½o
 
 Sintaxe
 (chave/valor)
@@ -130,7 +130,7 @@ Lista
 Lista Vazia
 []
 
-Números, Strings, Objetos e Booleanos
+Nï¿½meros, Strings, Objetos e Booleanos
 {
   "nome": "Curso REST",
   "instrutor": {"nome": "William"},
