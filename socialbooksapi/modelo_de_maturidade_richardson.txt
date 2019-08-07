@@ -1,6 +1,6 @@
 
-Maioria das aplicaÁıes utiliza o modelo RPC (Remote Procedure Call)
-ExposiÁ„o de mÈtodos/funÁıes para execuÁ„o remota
+Maioria das aplica√ß√µes utilizam o modelo RPC (Remote Procedure Call)
+Exposi√ß√£o de m√©todos/fun√ß√µes para execu√ß√£o remota
 
 Modelo de Maturidade Richardson
 
@@ -11,36 +11,36 @@ Level 0: The Swamp of POX
 
 ----------------------------------------
 
-NÌvel 0: POX (Plain Old XML)
+N√≠vel 0: POX (Plain Old XML)
 Modelo RPC
 HTTP apenas como transporte
 Semelhante ao uso de SOAP ou XML-RPC
-Ainda n„o È Rest
+Ainda n√£o √© Rest
 
 POST /salvarCliente HTTP/1.1
 <cliente>
-  <nome>Jo„o da Silva</nome>
+  <nome>Jo√£o da Silva</nome>
   <nascimento>01/01/1970</nascimento>
 </cliente>
 
 ----------------------------------------
 
-NÌvel 1: Recursos
+N√≠ivel 1: Recursos
 Mapear recursos (clientes, pedidos, ...)
 
 POST /clientes HTTP/1.1
 <cliente>
-  <nome>Jo„o da Silva</nome>
+  <nome>Jo√£o da Silva</nome>
   <nascimento>01/01/1970</nascimento>
 </cliente>
 
 -------------------------------------------
 
-NÌvel 2: UtilizaÁ„o dos mÈtodos e respostas da forma correta
+N√≠vel 2: Utiliza√ß√£o dos m√©todos e respostas da forma correta
 
 POST /clientes HTTP/1.1
 <cliente>
-  <nome>Jo„o da Silva</nome>
+  <nome>Jo√£o da Silva</nome>
   <nascimento>01/01/1970</nascimento>
 </cliente>
 
@@ -49,17 +49,17 @@ Location: /cliente/1
 
 -------------------------------------------
 
-NÌvel 3: Hypermedia
+N√≠vel 3: Hypermedia
 Entrega motor de estado
-AlÈm do conte˙do retornado, tambÈm se retorna links para ir para um prÛximo estado
-Permite desacoplar o m·ximo possÌvel o cliente do servidor
+Al√©m do conte√∫do retornado, tamb√©m se retorna links para ir para um pr√≥ximo estado
+Permite desacoplar o m√°ximo poss√≠vel o cliente do servidor
 
 GET /cliente/1 HTTP/1.1
 
 HTTP/1.1 200 OK
 <cliente>
   <id>1</id>
-  <nome>Jo„o da Silva</nome>
+  <nome>Jo√£o da Silva</nome>
   <link rel="deletar" href="/cliente/1"/>
   <link rel="notificar" href="/cliente/1/notificacao"/>
 </cliente>

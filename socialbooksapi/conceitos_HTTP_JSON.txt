@@ -1,12 +1,12 @@
 HTTP
 Hypertext Transfer Protocol
 
-Comunica��o/camadas
-1-F�sica
+Comunicação/camadas
+1-Física
 2-Enlace
 3-Rede (IP)
 4-Transporte (TCP)
-5-Aplica��o (HTTP)
+5-Aplicação (HTTP)
 
 Modelo Request/Response
 
@@ -32,19 +32,19 @@ URI - Universal Resource Identifier
 
 
 Testes com 
-Wireshark (captura o tr�fego de informa��es que passam na interface de rede)
+Wireshark (captura o tráfego de informa��es que passam na interface de rede)
 Postman (executa end-points http)
 
 -----------------------------------------
 
-Principais M�todos HTTP
+Principais Métodos HTTP
 GET (utilizado quando existe a necessidade de se obter um recurso)
 POST (utilizado quando desejamos criar um recurso)
-PUT (semelhante ao m�todo POST, esse m�todo nos permite a atualiza��o de um recurso j� existente)
-DELETE (como o pr�prio nome sugere, o DELETE � utilizado quando existe a necessidade de remo��o de um recurso)
+PUT (semelhante ao m�todo POST, esse m�todo nos permite a atualização de um recurso já existente)
+DELETE (como o próprio nome sugere, o DELETE é utilizado quando existe a necessidade de remoção de um recurso)
 
 Respostas (Response codes)
-1xx (Informa��es gerais)
+1xx (Informações gerais)
 2xx (Sucesso)
 3xx (Redirecionamento)
 4xx (Erro no cliente)
@@ -52,8 +52,8 @@ Respostas (Response codes)
 
 ------------------------------------------
 
-Representa��es
-Representa��o � o formato dos dados que requisitamos do servidor
+Representações
+Representação é o formato dos dados que requisitamos do servidor
 
 GET/cursos
 Content-type: text/html
@@ -86,22 +86,22 @@ Content-type: application/json
   "duracao": "10hs"
 }
 
-Desacoplado o recurso da representa��o
+Desacoplado o recurso da representação
 
 ---------------------------------------------
 
 Formato JSON
 JavaScript Object Notation
-Formato para interc�mbio de dados
+Formato para intercâmbio de dados
 
-Nota��o
-Sistema de caracteres para representar dados, por exemplo n�mero e palavras
+Notação
+Sistema de caracteres para representar dados, por exemplo número e palavras
 
 Portabilidade
-Transmite informa��es independente da tecnologia utilizada
+Transmite informações independente da tecnologia utilizada
 
 Facilidade de entendimento
-Representa os dados de maneira padronizada em rela��o aos conceitos universais de programa��o
+Representa os dados de maneira padronizada em relação aos conceitos universais de programação
 
 Sintaxe
 (chave/valor)
@@ -130,7 +130,7 @@ Lista
 Lista Vazia
 []
 
-N�meros, Strings, Objetos e Booleanos
+Números, Strings, Objetos e Booleanos
 {
   "nome": "Curso REST",
   "instrutor": {"nome": "William"},
