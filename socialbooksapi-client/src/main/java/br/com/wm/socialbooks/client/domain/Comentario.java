@@ -1,4 +1,4 @@
-package br.com.wm.socialbooks.aplicacao;
+package br.com.wm.socialbooks.client.domain;
 
 import java.util.Date;
 
