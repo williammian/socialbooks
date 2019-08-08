@@ -1,0 +1,19 @@
+POST http://localhost:8080/autores
+
+Tests
+
+tests["Successful POST request"] = responseCode.code === 201;
+
+postman.setGlobalVariable("localizacao", postman.getResponseHeader("Location"))
+
+----------------------------------
+
+GET {{localizacao}}
+
+tests["Body matches string"] = responseBody.has("José");
+
+----------------------------------
+
+GET http://localhost:8080/livros/123
+
+tests["Status code is 404"] = responseCode.code === 404;
