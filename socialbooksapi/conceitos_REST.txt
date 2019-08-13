@@ -14,13 +14,24 @@ Application Programming Interface
 Interface padrão entre dois módulos/sistemas distintos
 
 Constraints de APIs RestFull
-- Cliente/Servidor
-- Stateless (não mantém estado, requisições não tem relação com requisições anteriores, aumenta capacidade de escalabilidade)
-- Cache (tira gargalo do servidor)
-- Interface Uniforme (recurso, informação abstrata como cliente, produto, modelo, acesso através de URI, ex: métodos HTTP)
-- Sistema em Camadas (elementos intermediários antes que a requisição chegue de fato ao servidor, ex: caching, autenticação, loging, etc, feitos de forma transparente)
-- Código sob demanda (característica que o servidor tem de poder enviar código para o cliente e mudar o comportamento dele, ex: JavaScript)
+- Cliente/Servidor (tem que existir os dois papéis, o cliente e o servidor)
+
+- Stateless (não mantém estado, requisições não tem relação com requisições anteriores, aumenta capacidade de escalabilidade,
+o sistema não pode ter sessões amarradas/criadas para o cliente e as requisições tem que ter todos os dados para o processo ser realizado 
+e a resposta ser completa)
+
+- Cache (tira gargalo do servidor, precisa permitir que o cache seja feito caso necessário)
+
+- Interface Uniforme (recurso, informação abstrata como cliente, produto, modelo, acesso através de URI, ex: métodos HTTP,
+a API não pode fazer distinção de clientes, não pode diferenciar e processar algo diferente para navegador, desktop ou mobile)
+
+- Sistema em Camadas (elementos intermediários antes que a requisição chegue de fato ao servidor, ex: caching, autenticação, loging, etc, feitos de forma transparente, 
+entre o cliente e a API deve ser possível adicionar algum serviço como log da aplicação)
+
+- Código sob demanda (característica que o servidor tem de poder enviar código para o cliente e mudar o comportamento dele, ex: JavaScript importado direto do servidor da API)
+
 - Representações (conteúdos que os servidores nos retornam quando solicitamos algo, ex: HTML, XML, JSON)
+
 - HATEOAS
 Hypermedia as the Engine of Application State
 Motor de estado que permite que naveguemos sobre determinada aplicação Web
